@@ -1,0 +1,44 @@
+<div class="main-panel black">
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" *ngFor="let d of devices">
+
+                    <div class="card card-chart singledevice" [ngClass]="{'singledeviceoff': 'OFF' === d.state}">
+
+                        <div class="card-body">
+                            <h4 class="card-title">{{ d.name }}</h4>
+                            <div class="card-devicesicon" [ngClass]="{'card-devicesiconoff': 'OFF' === d.state}" >
+                                <i class="material-icons">emoji_objects</i>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="stats">
+                                <label class="switch">
+                                    <input type="checkbox" [checked]="d.state === 'ON'"
+                                        (change)="d.state = $event.target.checked ? 'ON' : 'OFF'" (click)="clickEventHandler(d,$event)" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-chart  add" [routerLink]="['/addDevice']">
+
+                        <div class="card-body">
+                            <h4 class="card-title"></h4>
+                            <div class="card-devicesiconoff">
+                                <i class="material-icons">add</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="main-panel">
+<div class="main-content">
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card card-stats">
+            <div class="card-header card-header-success card-header-icon">
+              <div class="card-icon room">
+                <i class="material-icons">local_laundry_service</i>
+              </div>
+              <p class="card-category">Numri i paisjeve</p>
+              <h3 class="card-title">{{ noDevices }}</h3>
+            </div>
+           </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card card-stats">
+            <div class="card-header card-header-success card-header-icon">
+              <div class="card-icon on">
+                <i class="material-icons">power_settings_new</i>
+              </div>
+              <p class="card-category">Paisje te ndezura</p>
+              <h3 class="card-title">{{ noOnDevices }}</h3>
+            </div>
+           </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card card-stats">
+            <div class="card-header card-header-danger card-header-icon">
+              <div class="card-icon ngarkesa">
+                <i class="material-icons ">warning</i>
+              </div>
+              <p class="card-category">Ngarkesa aktuale</p>
+              <h3 class="card-title">{{ actualPower }}</h3>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-md-3" *ngFor="let d of devices">
+            <div class="card card-chart singledevice"  [ngClass]="{'singledeviceoff': 'OFF' === d.state}" >
+                
+                <div class="card-body">
+                    <h4 class="card-title">{{ d.name }}</h4>
+                    <div class="card-devicesicon" [ngClass]="{'card-devicesiconoff': 'OFF' === d.state}" >
+                      <i class="material-icons">emoji_objects</i>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                  <div class="stats">
+                    <label class="switch">
+                        <input type="checkbox" [checked]="d.state === 'ON'"
+                            (change)="d.state = $event.target.checked ? 'ON' : 'OFF'" (click)="clickEventHandler(d,$event)" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>

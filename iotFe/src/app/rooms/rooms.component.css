@@ -1,0 +1,23 @@
+.card .card-title {
+    font-weight: 400;
+    color: #000;
+    text-align:center;
+}
+.card-icon.room {background:none!important;box-shadow:none!important}
+
+.card-icon.room i.material-icons {font-size:50px;color:#999999;padding:10px}
+
+.card-icon.ngarkesa {background:none!important;box-shadow:none!important}
+
+.card-icon.ngarkesa i.material-icons {font-size:50px;color:#fd3a09;padding:10px}
+.card.card-chart:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(52, 52, 52, 0.4);
+    color: #fff!important;
+}
+
+.room{
+    color:#ff9800;
+    font-size:20px;
+    font-weight: 400;
+}

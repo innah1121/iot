@@ -1,0 +1,9 @@
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image){
+    background:#000000!important;
+    box-shadow: 0 0 10px rgb(245 245 245 / 40%);
+}
+
+.mat-button.btn.btn-lg, .btn-group-lg .mat-button.btn, .mat-raised-button.btn.btn-lg, .btn-group-lg .mat-raised-button.btn, .mat-raised-button.btn:not([class*=mat-elevation-z]).btn-lg, .btn-group-lg .mat-raised-button.btn:not([class*=mat-elevation-z]), .btn.btn-lg, .btn-group-lg .btn{
+    background:#000000!important;
+    box-shadow: 0 0 10px rgb(245 245 245 / 40%);
+}

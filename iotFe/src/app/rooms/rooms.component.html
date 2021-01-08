@@ -1,0 +1,53 @@
+
+<div class="main-panel">
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-success card-header-icon">
+            <div class="card-icon room">
+              <i class="material-icons">store</i>
+            </div>
+            <p class="card-category">Numri i dhomave</p>
+            <h3 class="card-title">{{ noRooms }}</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-danger card-header-icon">
+            <div class="card-icon ngarkesa">
+              <i class="material-icons ">info_outline</i>
+            </div>
+            <p class="card-category">Ngarkesa aktuale</p>
+            <h3 class="card-title">{{ actualPower }}</h3>
+          </div>
+           
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="row">
+        <div class="col-md-3" *ngFor="let r of rooms">
+            <div class="card card-chart" [routerLink]="['/rooms/singleRoom']" [queryParams]="{id: r.id}">
+                
+                <div class="card-body">
+                    <h4 class="card-title">{{ r.name }}</h4>
+                    <p class="card-category"></p>
+                </div>
+
+                <div class="card-footer">
+                    <div class="stats">
+                      <p class ="room"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>

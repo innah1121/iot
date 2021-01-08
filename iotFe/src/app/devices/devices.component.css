@@ -1,0 +1,113 @@
+.card .card-title {
+    font-weight: 400;
+    color: #000;
+    text-align:center;
+}
+
+.card-icon.room {background:none!important;box-shadow:none!important}
+
+.card-icon.room i.material-icons {font-size:50px;color:#999999;padding:10px}
+.card-icon.ngarkesa {background:none!important;box-shadow:none!important}
+
+.card-icon.ngarkesa i.material-icons {font-size:50px;color:#fd3a09;padding:10px}
+.card.card-chart:hover {
+    cursor: pointer;
+   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(52, 52, 52, 0.4);
+    color: #fff!important;
+}
+.card-icon.on {background:none!important;box-shadow:none!important}
+.card-icon.on i.material-icons {font-size:50px;color:#6cd375;padding:10px}
+
+
+.card.card-chart.singledevice h4.card-title {text-align:center;font-weight:400;color:#fff}
+.card.card-chart.singledevice{
+    background: rgb(58 56 56 / 78%);
+    box-shadow: 0 0 10px rgb(245 245 245 / 40%);
+    border-radius: 10px;}
+
+.card-devicesicon i.material-icons {background:#ff9800;border-radius:100%;padding:5px;color:#fff;text-align:center;display:block;margin:0 auto;
+max-width:fit-content;height:auto;font-size:40px;
+
+-moz-box-shadow: 0 0 10px rgb(245 245 245 / 20%);
+-webkit-box-shadow: 0 0 10px rgb(245 245 245 / 61%);
+box-shadow: 0 0 20px rgb(245 245 245 / 60%);
+}
+
+
+
+.card.card-chart.singledeviceoff h4.card-title {text-align:center;font-weight:400;color:#fff}
+.card.card-chart.singledeviceoff{background:rgba(0,0,0,.87)}
+
+.card-devicesiconoff i.material-icons {background:#000000;border-radius:100%;padding:5px;color:#fff;text-align:center;display:block;margin:0 auto;
+max-width:fit-content;height:auto;font-size:40px;
+
+-moz-box-shadow: none;
+-webkit-box-shadow:none;
+box-shadow: none;
+}
+
+.main-panel.black.ps {background:#000}
+.main-panel.black {
+    background: #000;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ff9800;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ff9800;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
